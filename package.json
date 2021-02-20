@@ -1,0 +1,46 @@
+{
+  "name": "turningthekorner",
+  "version": "1.0.0",
+  "description": "Fast n Fun Racing website",
+  "main": "pages/index.jsx",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dstarner/fastnfun.git"
+  },
+  "keywords": [
+    "iracing",
+    "fastnfun",
+    "league"
+  ],
+  "author": "Dan Starner",
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/dstarner/fastnfun/issues"
+  },
+  "homepage": "https://github.com/dstarner/fastnfun#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "aos": "^2.3.4",
+    "jarallax": "^1.12.5",
+    "next": "^10.0.6",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "react": "^17.0.1",
+    "react-countup": "^4.3.3",
+    "react-dom": "^17.0.1",
+    "react-google-maps": "^9.4.5",
+    "react-lazy-load-image-component": "^1.5.1",
+    "react-typed": "^1.2.0",
+    "react-visibility-sensor": "^5.1.1",
+    "recompose": "^0.30.0",
+    "swiper": "^5.4.1",
+    "webpack": "^5.21.1"
+  }
+}

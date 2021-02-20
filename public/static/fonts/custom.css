@@ -1,0 +1,33 @@
+/*
+      www.OnlineWebFonts.Com 
+      You must credit the author Copy this link on your web 
+      <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
+      OR
+      <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+*/
+@font-face {font-family: "Hauser";
+    src: url("/static/fonts/hauser/hauser.eot"); /* IE9*/
+    src: url("/static/fonts/hauser/hauser_iefix.eot") format("embedded-opentype"), /* IE6-IE8 */
+    url("/static/fonts/hauser/hauser.woff2") format("woff2"), /* chrome firefox */
+    url("/static/fonts/hauser/hauser.woff") format("woff"), /* chrome firefox */
+    url("/static/fonts/hauser/hauser.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("/static/fonts/hauser/hauser.svg") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "Hauser Condensed";
+    src: url("/static/fonts/hauser/hauser_condensed.eot"); /* IE9*/
+    src: url("/static/fonts/hauser/hauser_condensed_iefix.eot") format("embedded-opentype"), /* IE6-IE8 */
+    url("/static/fonts/hauser/hauser_condensed.woff2") format("woff2"), /* chrome firefox */
+    url("/static/fonts/hauser/hauser_condensed.woff") format("woff"), /* chrome firefox */
+    url("/static/fonts/hauser/hauser_condensed.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("/static/fonts/hauser/hauser_condensed.svg.svg") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "Hauser Condensed Italic";
+    src: url("/static/fonts/hauser/hauser_condensed_italic.eot"); /* IE9*/
+    src: url("/static/fonts/hauser/hauser_condensed_italic_iefix.eot") format("embedded-opentype"), /* IE6-IE8 */
+    url("/static/fonts/hauser/hauser_condensed_italic.woff2") format("woff2"), /* chrome firefox */
+    url("/static/fonts/hauser/hauser_condensed_italic.woff") format("woff"), /* chrome firefox */
+    url("/static/fonts/hauser/hauser_condensed_italic.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("/static/fonts/hauser/hauser_condensed_italic.svg") format("svg"); /* iOS 4.1- */
+}
