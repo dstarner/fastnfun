@@ -73,8 +73,10 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
+const defaultAvatar = (driver) => {return { src: driver.src }};
+const defaultSecondary = (driver) => driver.number ? `#${driver.number}` : "-";
 
-function Drivers({ drivers, secondaryFunc=(driver) => driver.number ? `#${driver.number}` : "-" }) {
+function Drivers({ drivers, avatarFunc=defaultAvatar, secondaryFunc=defaultSecondary }) {
     const classes = useStyles();
     const isMd = useBreakpoint("md", "up", true);
 
@@ -83,7 +85,7 @@ function Drivers({ drivers, secondaryFunc=(driver) => driver.number ? `#${driver
             <ListItemLink disableGutters className={classes.listItem} href={`/drivers/${driver.id}`}>
                 <ListItemAvatar className={classes.listItemAvatar}>
                     <Avatar
-                        {...driver.authorPhoto}
+                        {...avatarFunc(driver)}
                         className={clsx(classes.avatar, {
                             [classes.bioAvatar]: driver.bio,
                         })}

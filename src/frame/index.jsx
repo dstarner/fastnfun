@@ -3,21 +3,26 @@ import clsx from "clsx";
 import Head from 'next/head';
 import {
     AppBar,
+    Divider,
+    Drawer,
     Grid,
+    Hidden,
     IconButton,
     List,
+    ListItem,
+    Menu,
     Slide,
     Toolbar,
     Typography,
     makeStyles,
     useScrollTrigger,
-    Hidden,
-    Drawer,
-    Divider,
+    ListItemText,
 } from "@material-ui/core";
-import { TypographyLink, ListItemLink } from "src/components/atoms/Link";
+import { Menu as MenuIcon } from "@material-ui/icons";
+import { TypographyLink, ListItemLink, MenuItemLink } from "src/components/atoms/Link";
 import { Section } from "src/components/organisms";
-import { Menu } from "@material-ui/icons";
+
+import leagues from "src/data/leagues/index.json";
 
 
 const links = [
@@ -40,7 +45,7 @@ const useStyles = makeStyles(theme => ({
         ...theme.typography.headerItalic,
     },
     drawer: {
-        minWidth: 275,
+        minWidth: 300,
     },
     drawerHeader: {
         display: "block",
@@ -78,6 +83,12 @@ const useStyles = makeStyles(theme => ({
         fontWeight: 500,
         fontSize: 'large',
     },
+    leagueMenu: {
+        backgroundColor: theme.palette.grey[900],
+    },
+    nested: {
+        paddingLeft: theme.spacing(4),
+    },    
 }));
 
 
@@ -85,6 +96,8 @@ function PageFrame({ children, title, floatingNav = false, hideNav = false }) {
     const classes = useStyles();
     const trigger = useScrollTrigger({ disableHysteresis: false, threshold: 150 });
     const [drawerOpen, setDrawerOpen] = useState(false);
+
+    const [leagueMenuEl, setLeagueMenuEl] = useState(null);
 
     return (
         <>
@@ -105,6 +118,46 @@ function PageFrame({ children, title, floatingNav = false, hideNav = false }) {
                             </TypographyLink>
                             <Hidden smDown>
                                 <List className={classes.navigationContainer}>
+                                    <ListItem
+                                        className={classes.listItem} onClick={(e) => setLeagueMenuEl(e.target)}
+                                        aria-controls="league-menu"
+                                    >
+                                        <Typography
+                                            variant="body1"
+                                            color="textSecondary"
+                                            className={clsx(classes.listItemText, 'menu-item')}
+                                        >
+                                            LEAGUES
+                                        </Typography>
+                                    </ListItem>
+                                    <Menu
+                                        id="league-menu"
+                                        anchorEl={leagueMenuEl}
+                                        keepMounted
+                                        open={Boolean(leagueMenuEl)}
+                                        onClose={() => setLeagueMenuEl(null)}
+                                        anchorOrigin={{
+                                            vertical: "bottom",
+                                            horizontal: "center",
+                                        }}
+                                        transformOrigin={{
+                                            vertical: "top",
+                                            horizontal: "center",
+                                        }}
+                                        getContentAnchorEl={null}
+                                        classes={{
+                                            paper: classes.leagueMenu
+                                        }}
+                                    >
+                                        {leagues.map(league => (
+                                            <MenuItemLink key={league.id} href={`/league/${league.id}`}>
+                                                <ListItemText
+                                                    primary={league.name}
+                                                />
+                                                
+                                            </MenuItemLink>
+                                        ))}
+                                    </Menu>
                                     {
                                         links.map(({ title, href, ...linkProps}, idx) => (
                                             <ListItemLink
@@ -126,7 +179,7 @@ function PageFrame({ children, title, floatingNav = false, hideNav = false }) {
                             </Hidden>
                             <Hidden mdUp>
                                 <IconButton onClick={() => setDrawerOpen(true)}>
-                                    <Menu/>
+                                    <MenuIcon/>
                                 </IconButton>
                                 <Drawer open={drawerOpen} anchor="left" onClose={() => setDrawerOpen(false)}>
                                     <div className={classes.drawer}>
@@ -135,23 +188,47 @@ function PageFrame({ children, title, floatingNav = false, hideNav = false }) {
                                         </TypographyLink>
                                         <Divider />
                                         <List>
-                                        {
-                                            links.map(({ title, href, ...linkProps}, idx) => (
+                                            <ListItem>
+                                                <Typography
+                                                    variant="body1"
+                                                    color="textSecondary"
+                                                    className={clsx(classes.listItemText, 'menu-item')}
+                                                >
+                                                    LEAGUES
+                                                </Typography>
+                                            </ListItem>
+                                            {leagues.map(league => (
                                                 <ListItemLink
-                                                    key={idx} {...linkProps}
-                                                    className={classes.listItem}
-                                                    href={href}
+                                                    key={league.id} className={clsx(classes.listItem, classes.nested)}
+                                                    href={`/league/${league.id}`}
                                                 >
                                                     <Typography
-                                                        variant="body1"
+                                                        variant="body2"
                                                         color="textSecondary"
-                                                        className={clsx(classes.listItemText, 'menu-item')}
+                                                        className={clsx('menu-item')}
                                                     >
-                                                        {title}
+                                                        {league.name}
                                                     </Typography>
                                                 </ListItemLink>
-                                            ))
-                                        }
+                                            ))}
+                                            <Divider />
+                                            {
+                                                links.map(({ title, href, ...linkProps}, idx) => (
+                                                    <ListItemLink
+                                                        key={idx} {...linkProps}
+                                                        className={classes.listItem}
+                                                        href={href}
+                                                    >
+                                                        <Typography
+                                                            variant="body1"
+                                                            color="textSecondary"
+                                                            className={clsx(classes.listItemText, 'menu-item')}
+                                                        >
+                                                            {title}
+                                                        </Typography>
+                                                    </ListItemLink>
+                                                ))
+                                            }
                                         </List>
                                     </div>
                                 </Drawer>

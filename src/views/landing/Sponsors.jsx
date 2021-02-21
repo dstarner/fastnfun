@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-function Sponsors() {
+function Sponsors(props) {
     const classes = useStyles();
     const isSm = useBreakpoint("sm", "down", false);
 
@@ -50,7 +50,7 @@ function Sponsors() {
     }
 
     return (
-        <Section className={classes.root} fullWidth>
+        <Section {...props} className={classes.root} fullWidth>
             <Grid container justify="center">
                 <Grid item sm={12} md={4} lg={3} className={clsx(classes.cell, { [classes.rightBorder]: !isSm })}>
                     <SponsorImage src="/static/images/sponsors/gmg.png" />

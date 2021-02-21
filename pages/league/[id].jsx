@@ -10,6 +10,7 @@ import Leagues from "src/views/landing/Leagues";
 import scrapped from "src/data/leagues/scrapped.json";
 import leagues from "src/data/leagues/index.json";
 import CompleteHeroBackground from "src/components/organisms/CompleteHeroBackground";
+import { useTheme } from "@material-ui/core";
 
 
 function sortByNumber(a, b) {
@@ -24,6 +25,7 @@ function LeaguePage({ league, overview, valid }) {
         return <ErrorPage statusCode={404} />
     }
 
+    const theme = useTheme();
     const sortedSeasons = league.seasons.sort((a, b) => {
         return moment(a.sessions[0].date) > moment(b.sessions[0].date) ? -1 : 1
     });
@@ -35,7 +37,18 @@ function LeaguePage({ league, overview, valid }) {
                 subtitle={overview.description}
             />
             <Seasons seasons={sortedSeasons} />
-            <Drivers drivers={league.members.filter(d => d.number !== null).sort(sortByNumber)} />
+            <Drivers
+                drivers={league.members.filter(d => d.number !== null).sort(sortByNumber)}
+                secondaryFunc={() => undefined}
+                avatarFunc={(driver) => ({
+                    style: {
+                        fontSize: theme.typography.h1.fontSize,
+                        color: theme.palette.common.white,
+                        ...theme.typography.header,
+                    },
+                    children: driver.number,
+                })}
+            />
             <Leagues />
         </PageFrame>
     );

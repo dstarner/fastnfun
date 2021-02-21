@@ -9,6 +9,11 @@ import { OverlapedImages, SectionHeader } from "src/components/molecules";
 const useStyles = makeStyles(theme => ({
     textColumns: theme.palette.classes.gridSectionHeader,
     yellowBackground: theme.palette.gradientBG,
+    imageContainer: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+    },
 }));
 
 
@@ -44,7 +49,7 @@ function Intro(props) {
                         />
                     </div>
                 </Grid>
-                <Grid item xs={12} lg={6}>
+                <Grid item xs={12} lg={6} className={classes.imageContainer}>
                     <OverlapedImages
                         data-aos="fade-up"
                         image1={{ src: "/static/images/screenshots/cup_michigan.png" }}

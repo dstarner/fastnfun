@@ -109,7 +109,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-function LandingHero({ leaguesLink }) {
+function LandingHero({ ctaGroup }) {
 
     const [bgIdx, setBgIdx] = useState(0);
     useInterval(() => {
@@ -153,10 +153,7 @@ function LandingHero({ leaguesLink }) {
                 variant: 'h2',
                 color: 'textPrimary',
             }}
-            ctaGroup={[
-                <Button variant="contained" size="large">Leagues</Button>,
-                <Button variant="outlined" size="large">Join the Fun</Button>
-            ]}
+            ctaGroup={ctaGroup}
             data-aos="fade-right"
             disableGutter
             className={classes.leftSideContent}

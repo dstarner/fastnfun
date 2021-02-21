@@ -8,8 +8,9 @@ import { ChevronRight } from "@material-ui/icons";
 import { GridListTileLink } from "src/components/atoms/Link";
 import { SectionHeader } from "src/components/molecules";
 import { Section } from "src/components/organisms";
-import leagues from "src/data/leagues/index.json";
 import { useBreakpoint } from "src/hooks";
+
+import leagues from "src/data/leagues/index.json";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -32,12 +33,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function Leagues() {
+function Leagues(props) {
     const classes = useStyles();
     const isSm = useBreakpoint("sm", "down", false);
 
     return (
-        <Section>
+        <Section {...props}>
             <SectionHeader
                 title="Fast &apos;n Fun Leagues"
                 subtitle="Check out our current series and learn more about the schedules, broadcasts, and drivers"
