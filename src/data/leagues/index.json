@@ -1,0 +1,28 @@
+[
+    {
+        "id": 4938,
+        "img": "/static/images/screenshots/4_wide_cup.png",
+        "name": "Champion Cup Series",
+        "featured": true,
+        "description": "High speeds and high quality racing in NASCAR's premier series"
+    },
+    {
+        "id": 5133,
+        "img": "/static/images/screenshots/xfinity_finish.png",
+        "name": "Fast 'n Fun Xfinity Series",
+        "description": "A fun league for weekend racers wanting some no-holds-bar racing"
+    },
+    {
+        "id": 5561,
+        "img": "/static/images/screenshots/iroc_drafting.png",
+        "name": "Fast 'n Fun IROC Series",
+        "description": "A close quarters, invitation-only league in the Riley Prototype"
+    },
+    {
+        "id": 4923,
+        "img": "/static/images/screenshots/3_wide_trucks.png",
+        "name": "Green Mountain Grills Truck Series",
+        "featured": true,
+        "description": "Beatin' and bangin' around some of the most iconic NASCAR tracks"
+    }
+]

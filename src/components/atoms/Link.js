@@ -3,6 +3,7 @@ import React, { forwardRef } from 'react';
 import NLink from 'next/link';
 import {
   Button,
+  GridListTile as MGridListTile,
   ListItem as MListItem,
   MenuItem as MMenuItem,
   Typography,
@@ -15,6 +16,16 @@ export const ButtonLink = forwardRef(
       <Button ref={ref} {...props}>
         {children}
       </Button>
+    </NLink>
+  ),
+);
+
+export const GridListTileLink = forwardRef(
+  ({ href, prefetch, style, children, ...props }, ref) => (
+    <NLink href={href} prefetch={prefetch} passHref>
+      <MGridListTile ref={ref} style={{ ...(style ? style : {}), cursor: "pointer", }} {...props}>
+        {children}
+      </MGridListTile>
     </NLink>
   ),
 );

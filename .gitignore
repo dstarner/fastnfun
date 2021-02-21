@@ -84,6 +84,7 @@ out
 .nuxt
 dist
 .DS_Store
+scrapper
 
 # Gatsby files
 .cache/

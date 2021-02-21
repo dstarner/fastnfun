@@ -1,36 +1,16 @@
 import {
     GridList,
-    GridListTile,
     GridListTileBar,
     IconButton,
     makeStyles,
 } from "@material-ui/core";
 import { ChevronRight } from "@material-ui/icons";
+import { GridListTileLink } from "src/components/atoms/Link";
 import { SectionHeader } from "src/components/molecules";
 import { Section } from "src/components/organisms";
+import leagues from "src/data/leagues/index.json";
 import { useBreakpoint } from "src/hooks";
 
-const leagues = [
-    {
-        img: "/static/images/screenshots/4_wide_cup.png",
-        name: "Champion Cup Series",
-        featured: true,
-    },
-    {
-        img: "/static/images/screenshots/xfinity_finish.png",
-        name: "Fast 'n Fun Xfinity Series",
-    },
-    {
-        img: "/static/images/screenshots/iroc_drafting.png",
-        name: "Fast 'n Fun IROC Series",
-    },
-    {
-        img: "/static/images/screenshots/3_wide_trucks.png",
-        name: "Green Mountain Grills Trucks Series",
-        featured: true,
-    },
-    
-];
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -39,6 +19,11 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'space-around',
         overflow: 'hidden',
         backgroundColor: theme.palette.background.paper,
+    },
+    tileBar: {
+        "&:hover": {
+            backgroundColor: theme.palette.grey[900],
+        },
     },
     icon: {
         marginRight: theme.spacing(.5),
@@ -59,17 +44,23 @@ function Leagues() {
             />
             <GridList cellHeight={180} spacing={isSm ? 4 : 8}>
                 {leagues.map((tile, idx) => (
-                    <GridListTile key={idx} cols={tile.featured ? 2 : 1} rows={tile.featured ? 2 : 1}>
+                    <GridListTileLink
+                        key={idx} cols={tile.featured ? 2 : 1} rows={tile.featured ? 2 : 1}
+                        href={`/league/${tile.id}`}
+                    >
                         <img src={tile.img} alt={tile.name} className={classes.tileImage}/>
                         <GridListTileBar
                             title={tile.name}
+                            classes={{
+                                root: classes.tileBar
+                            }}
                             actionIcon={
                                 <IconButton aria-label={`info about ${tile.name}`} className={classes.icon}>
                                     <ChevronRight />
                                 </IconButton>
                             }
                         />
-                    </GridListTile>
+                    </GridListTileLink>
                 ))}
             </GridList>
         </Section>
