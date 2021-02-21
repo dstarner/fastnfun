@@ -10,11 +10,14 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-function CompleteHeroBackground({ title, subtitle, backgroundImg, backgroundColor="rgba(0,0,0,.8)", height="45vh" }) {
+function CompleteHeroBackground({ title, subtitle, backgroundImg, backgroundPosition, backgroundColor="rgba(0,0,0,.8)", height="45vh" }) {
     const classes = useStyles();
 
     return (
-        <HeroBackground style={{ minHeight: height }} backgroundColor={backgroundColor} backgroundImg={backgroundImg}>
+        <HeroBackground
+            style={{ minHeight: height }} backgroundPosition={backgroundPosition}
+            backgroundColor={backgroundColor} backgroundImg={backgroundImg}
+        >
             <SectionHeader
                 title={title}
                 titleProps={{
