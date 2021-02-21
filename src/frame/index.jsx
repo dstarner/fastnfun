@@ -1,5 +1,6 @@
 import { useState } from "react";
 import clsx from "clsx";
+import Head from 'next/head';
 import {
     AppBar,
     Grid,
@@ -80,13 +81,18 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-function PageFrame({ children, floatingNav = false, hideNav = false }) {
+function PageFrame({ children, title, floatingNav = false, hideNav = false }) {
     const classes = useStyles();
     const trigger = useScrollTrigger({ disableHysteresis: false, threshold: 150 });
     const [drawerOpen, setDrawerOpen] = useState(false);
 
     return (
         <>
+            <Head>
+                <title>
+                    {title ? `${title} | Fast n Fun iRacing` : 'Fast n Fun iRacing'}
+                </title>
+            </Head>
             {
                 <Slide in={!hideNav || (hideNav && trigger)} unmountOnExit mountOnEnter>
                     <AppBar

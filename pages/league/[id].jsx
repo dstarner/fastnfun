@@ -1,10 +1,7 @@
 import moment from "moment";
 import ErrorPage from 'next/error';
-import { makeStyles } from "@material-ui/core";
 
 import PageFrame from "src/frame";
-import { HeroBackground } from "src/components/organisms";
-import { SectionHeader } from "src/components/molecules";
 
 import Seasons from 'src/views/league/Seasons';
 import Drivers from 'src/views/league/Drivers';
@@ -14,12 +11,6 @@ import scrapped from "src/data/leagues/scrapped.json";
 import leagues from "src/data/leagues/index.json";
 import CompleteHeroBackground from "src/components/organisms/CompleteHeroBackground";
 
-
-const useStyles = makeStyles(theme => ({
-    title: {
-        ...theme.typography.headerItalic,
-    },
-}));
 
 function sortByNumber(a, b) {
     if (a.number === b.number) {
@@ -32,7 +23,6 @@ function LeaguePage({ league, overview, valid }) {
     if (!valid) {
         return <ErrorPage statusCode={404} />
     }
-    const classes = useStyles();
 
     const sortedSeasons = league.seasons.sort((a, b) => {
         return moment(a.sessions[0].date) > moment(b.sessions[0].date) ? -1 : 1

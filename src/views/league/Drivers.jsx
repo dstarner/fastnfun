@@ -1,9 +1,9 @@
 import clsx from "clsx";
-import { Avatar, Grid, ListItem, ListItemAvatar, ListItemText, makeStyles } from "@material-ui/core";
+import { Avatar, Grid, ListItemAvatar, ListItemText, makeStyles } from "@material-ui/core";
 import { SectionHeader } from "src/components/molecules";
 import { CardBase, Section } from "src/components/organisms";
 import { useBreakpoint } from "src/hooks";
-import { useState } from "react";
+import { ListItemLink } from "src/components/atoms/Link";
 
 
 const useStyles = makeStyles(theme => ({
@@ -74,28 +74,25 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-function Drivers({ drivers }) {
+function Drivers({ drivers, secondaryFunc=(driver) => driver.number ? `#${driver.number}` : "-" }) {
     const classes = useStyles();
     const isMd = useBreakpoint("md", "up", true);
 
-    const [bioMemeber, setBioMember] = useState(null);
-
     const DriverCard = ({ driver }) => (
         <CardBase className={classes.cardBase} liftUp>
-            <ListItem disableGutters className={classes.listItem}>
+            <ListItemLink disableGutters className={classes.listItem} href={`/drivers/${driver.id}`}>
                 <ListItemAvatar className={classes.listItemAvatar}>
                     <Avatar
                         {...driver.authorPhoto}
                         className={clsx(classes.avatar, {
                             [classes.bioAvatar]: driver.bio,
                         })}
-                        onClick={() => setBioMember(driver.bio ? item : null)}
                     />
                 </ListItemAvatar>
                 <ListItemText
                     className={classes.listItemText}
                     primary={driver.name}
-                    secondary={driver.number ? `#${driver.number}` : "-"}
+                    secondary={secondaryFunc(driver)}
                     primaryTypographyProps={{
                         className: classes.title,
                         variant: 'h6',
@@ -107,7 +104,7 @@ function Drivers({ drivers }) {
                         align: isMd ? 'left' : 'center',
                     }}
                 />
-            </ListItem>
+            </ListItemLink>
         </CardBase>
     )
 
