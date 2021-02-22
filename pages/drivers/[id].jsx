@@ -144,7 +144,7 @@ function DriverDetailsPage({ driver, valid }) {
                                 <ListItemText
                                     className={classes.listItemText}
                                     primary={driver.name}
-                                    secondary={driver.nickname || hometown || "No nickname"}
+                                    secondary={<><strong>Hometown:</strong> {hometown || "-"}</>}
                                     primaryTypographyProps={{
                                         className: classes.title,
                                         variant: 'h4',
