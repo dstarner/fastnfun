@@ -83,7 +83,7 @@ function Seasons({ seasons }) {
                 </Tabs>
                 {
                     seasons.map((season, idx) => (
-                        <TabPanel value={value} index={idx}>
+                        <TabPanel value={value} index={idx} key={idx}>
                             <Table>
                                 <TableHead>
                                     <TableRow>

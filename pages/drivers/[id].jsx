@@ -234,7 +234,7 @@ function DriverDetailsPage({ driver, valid }) {
 DriverDetailsPage.getInitialProps = async ({ res, ...ctx }) => {
     const { id } = ctx.query;
     const data = driverData[id];
-    return { driver: { ...data, id }, valid: Boolean(data) };
+    return { key: Number(new Date()), driver: { ...data, id }, valid: Boolean(data) };
 }
 
 export default DriverDetailsPage;

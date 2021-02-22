@@ -58,7 +58,7 @@ LeaguePage.getInitialProps = async ({ res, ...ctx }) => {
     const { id } = ctx.query;
     const data = scrapped[id];
     const overview = leagues.find(l => l.id == id);
-    return { league: { ...data, id }, overview, valid: Boolean(data) && Boolean(overview) };
+    return { key: Number(new Date()), league: { ...data, id }, overview, valid: Boolean(data) && Boolean(overview) };
 }
 
 export default LeaguePage;
