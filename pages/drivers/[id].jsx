@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import clsx from "clsx";
 import PageFrame from "src/frame";
 import ErrorPage from 'next/error';
@@ -7,7 +8,6 @@ import {
     CardContent,
     DialogContent,
     DialogContentText,
-    Divider,
     Grid,
     ListItem,
     ListItemAvatar,
@@ -160,7 +160,11 @@ function DriverDetailsPage({ driver, valid }) {
                             {
                                 driver.bio && (
                                     <DialogContent className={classes.bioContainer}>
-                                        <DialogContentText>{driver.bio}</DialogContentText>
+                                        <DialogContentText>
+                                            {(driver.bio || "").split("\n").map((block, idx) => (
+                                                <Fragment key={idx}>{block}<br/></Fragment>
+                                            ))}
+                                        </DialogContentText>
                                     </DialogContent>
                                 )
                             }

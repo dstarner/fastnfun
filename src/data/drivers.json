@@ -64,10 +64,6 @@
         "value": ""
       },
       {
-        "key": "EMail",
-        "value": "N/A"
-      },
-      {
         "key": "Work Web",
         "value": "N/A"
       },
@@ -209,11 +205,11 @@
       },
       {
         "key": "Hometown",
-        "value": "Scranton, PA"
+        "value": "Eynon, PA"
       },
       {
         "key": "Location",
-        "value": "Scranton, PA"
+        "value": "Dickson City, PA"
       },
       {
         "key": "Name",
@@ -229,10 +225,6 @@
       },
       {
         "key": "AIM",
-        "value": ""
-      },
-      {
-        "key": "EMail",
         "value": ""
       },
       {
@@ -253,11 +245,11 @@
       },
       {
         "key": "Movies",
-        "value": ""
+        "value": "Caddy Shack"
       },
       {
         "key": "iRacing Tracks",
-        "value": "Texas, Martinsville, COTA, The Glen, Donington Park"
+        "value": "Texas, Martinsville, Charlotte Roval, The Glen, Donington Park, Bathurst"
       },
       {
         "key": "iRacing Cars",
@@ -362,10 +354,6 @@
         "value": ""
       },
       {
-        "key": "EMail",
-        "value": ""
-      },
-      {
         "key": "Work Web",
         "value": ""
       },
@@ -466,7 +454,7 @@
     ]
   },
   "392702": {
-    "name": "Michael Potter4",
+    "name": "Michael Potter",
     "id": 392702,
     "leagues": [
       {
@@ -566,10 +554,6 @@
       {
         "key": "AIM",
         "value": ""
-      },
-      {
-        "key": "EMail",
-        "value": "N/A"
       },
       {
         "key": "Work Web",
@@ -680,10 +664,6 @@
         "value": ""
       },
       {
-        "key": "EMail",
-        "value": ""
-      },
-      {
         "key": "Work Web",
         "value": ""
       },
@@ -769,7 +749,7 @@
       }
     ],
     "member_since": "2021-01-16",
-    "bio": "I am 16 years old starting out Iracing, I also go to school. I play with my Traxxas 2wd Slash. I have 2 dogs. I like #22 of Joey Logano. The only races I have been too is the cup series at Texas Motor speedway.\n\nX1 win street stock",
+    "bio": "I am 16 years old starting out Iracing, I play with my Traxxas 2wd Slash. I have 2 dogs. I like #22 of Joey Logano. The only races I have been too is the cup series at Texas Motor speedway.\n\nX1 win street stock",
     "info": [
       {
         "key": "Birthdate",
@@ -802,10 +782,6 @@
       {
         "key": "AIM",
         "value": ""
-      },
-      {
-        "key": "EMail",
-        "value": "Whitehead.brock04@gmail.com"
       },
       {
         "key": "Work Web",
@@ -913,10 +889,6 @@
       },
       {
         "key": "AIM",
-        "value": ""
-      },
-      {
-        "key": "EMail",
         "value": ""
       },
       {
@@ -1034,10 +1006,6 @@
       {
         "key": "League Website",
         "value": "N/A"
-      },
-      {
-        "key": "EMail",
-        "value": "c.whitehead39.cw@gmail.com"
       },
       {
         "key": "Work Web",
@@ -1180,10 +1148,6 @@
         "value": ""
       },
       {
-        "key": "EMail",
-        "value": "shriverchris38@gmail.com"
-      },
-      {
         "key": "Work Web",
         "value": ""
       },
@@ -1304,10 +1268,6 @@
         "value": ""
       },
       {
-        "key": "EMail",
-        "value": "N/A"
-      },
-      {
         "key": "Work Web",
         "value": "N/A"
       },
@@ -1418,10 +1378,6 @@
         "value": "N/A"
       },
       {
-        "key": "EMail",
-        "value": "mxbomb972@gmail.com"
-      },
-      {
         "key": "Work Web",
         "value": "N/A"
       },
@@ -1516,7 +1472,7 @@
     ]
   },
   "468487": {
-    "name": "George Young2",
+    "name": "George Young",
     "id": 468487,
     "leagues": [
       {
@@ -1538,7 +1494,7 @@
         "league_name": "Fast N Fun Iroc Series"
       },
       {
-        "nickname": "George Yount",
+        "nickname": "George Young",
         "number": 48,
         "league_id": "4923",
         "league_name": "Green Mountain Grills Fast N Fun Truck Series"
@@ -1548,8 +1504,92 @@
     "bio": "No biographical information found",
     "info": [
       {
+        "key": "Birthdate",
+        "value": "N/A"
+      },
+      {
+        "key": "Nickname",
+        "value": "N/A"
+      },
+      {
+        "key": "Hometown",
+        "value": "Dallas, PA"
+      },
+      {
+        "key": "Location",
+        "value": "N/A"
+      },
+      {
         "key": "Name",
         "value": "George Young2"
+      },
+      {
+        "key": "My Website",
+        "value": "N/A"
+      },
+      {
+        "key": "League Website",
+        "value": "N/A"
+      },
+      {
+        "key": "Work Web",
+        "value": "N/A"
+      },
+      {
+        "key": "Website",
+        "value": "N/A"
+      },
+      {
+        "key": "Real Tracks",
+        "value": "N/A"
+      },
+      {
+        "key": "Real Cars",
+        "value": "RAM 1500"
+      },
+      {
+        "key": "Movies",
+        "value": "N/A"
+      },
+      {
+        "key": "iRacing Tracks",
+        "value": "N/A"
+      },
+      {
+        "key": "iRacing Cars",
+        "value": "N/A"
+      },
+      {
+        "key": "Hobbies",
+        "value": "Hunting/Fishing"
+      },
+      {
+        "key": "Games",
+        "value": "iRacing"
+      },
+      {
+        "key": "Music",
+        "value": "Metal Head"
+      },
+      {
+        "key": "TV Shows",
+        "value": "N/A"
+      },
+      {
+        "key": "Books",
+        "value": "N/A"
+      },
+      {
+        "key": "Quotations",
+        "value": "N/A"
+      },
+      {
+        "key": "Sports",
+        "value": "N/A"
+      },
+      {
+        "key": "iRacing Series",
+        "value": "N/A"
       }
     ]
   },
@@ -1626,10 +1666,6 @@
       {
         "key": "League Website",
         "value": "na"
-      },
-      {
-        "key": "EMail",
-        "value": "harleybarletta@yahoo.com"
       },
       {
         "key": "Website",
@@ -1748,10 +1784,6 @@
       {
         "key": "AIM",
         "value": ""
-      },
-      {
-        "key": "EMail",
-        "value": "outlaw20.jg@gmail.com"
       },
       {
         "key": "Work Web",
@@ -1894,10 +1926,6 @@
         "value": ""
       },
       {
-        "key": "EMail",
-        "value": ""
-      },
-      {
         "key": "Work Web",
         "value": ""
       },
@@ -2024,10 +2052,6 @@
       {
         "key": "AIM",
         "value": "mynameiscolb"
-      },
-      {
-        "key": "EMail",
-        "value": ""
       },
       {
         "key": "Work Web",
@@ -2168,7 +2192,7 @@
     ]
   },
   "501436": {
-    "name": "Kevin Ward10",
+    "name": "Kevin Ward",
     "id": 501436,
     "leagues": [
       {
@@ -2194,7 +2218,7 @@
     ]
   },
   "37955": {
-    "name": "Michael Thorpe3",
+    "name": "Michael Thorpe",
     "id": 37955,
     "leagues": [
       {
@@ -2238,10 +2262,6 @@
       {
         "key": "AIM",
         "value": ""
-      },
-      {
-        "key": "EMail",
-        "value": "N/A"
       },
       {
         "key": "Work Web",
@@ -2349,10 +2369,6 @@
       },
       {
         "key": "AIM",
-        "value": ""
-      },
-      {
-        "key": "EMail",
         "value": ""
       },
       {
@@ -2478,10 +2494,6 @@
         "value": "N/A"
       },
       {
-        "key": "EMail",
-        "value": "N/A"
-      },
-      {
         "key": "Work Web",
         "value": "N/A"
       },
@@ -2596,8 +2608,92 @@
     "bio": "No biographical information found",
     "info": [
       {
+        "key": "Birthdate",
+        "value": "02/11/1983"
+      },
+      {
+        "key": "Nickname",
+        "value": "sheldon Pearson #8"
+      },
+      {
+        "key": "Hometown",
+        "value": "lamar"
+      },
+      {
+        "key": "Location",
+        "value": "Colorado"
+      },
+      {
         "key": "Name",
         "value": "Sheldon Pearson"
+      },
+      {
+        "key": "My Website",
+        "value": "N/A"
+      },
+      {
+        "key": "League Website",
+        "value": "N/A"
+      },
+      {
+        "key": "Work Web",
+        "value": "N/A"
+      },
+      {
+        "key": "Website",
+        "value": "N/A"
+      },
+      {
+        "key": "Real Tracks",
+        "value": "N/A"
+      },
+      {
+        "key": "Real Cars",
+        "value": "N/A"
+      },
+      {
+        "key": "Movies",
+        "value": "N/A"
+      },
+      {
+        "key": "iRacing Tracks",
+        "value": "N/A"
+      },
+      {
+        "key": "iRacing Cars",
+        "value": "N/A"
+      },
+      {
+        "key": "Hobbies",
+        "value": "Iracing"
+      },
+      {
+        "key": "Games",
+        "value": "Iracing"
+      },
+      {
+        "key": "Music",
+        "value": "Country"
+      },
+      {
+        "key": "TV Shows",
+        "value": "anything racing"
+      },
+      {
+        "key": "Books",
+        "value": "N/A"
+      },
+      {
+        "key": "Quotations",
+        "value": "N/A"
+      },
+      {
+        "key": "Sports",
+        "value": "anything racing"
+      },
+      {
+        "key": "iRacing Series",
+        "value": "N/A"
       }
     ]
   },
@@ -2695,10 +2791,6 @@
       },
       {
         "key": "AIM",
-        "value": ""
-      },
-      {
-        "key": "EMail",
         "value": ""
       },
       {
@@ -2842,10 +2934,6 @@
         "value": ""
       },
       {
-        "key": "EMail",
-        "value": "deckardted@gmail.com"
-      },
-      {
         "key": "Work Web",
         "value": ""
       },
@@ -2971,10 +3059,6 @@
       },
       {
         "key": "AIM",
-        "value": ""
-      },
-      {
-        "key": "EMail",
         "value": ""
       },
       {
@@ -3136,10 +3220,6 @@
         "value": ""
       },
       {
-        "key": "EMail",
-        "value": "whitehead.trey99@gmail.com"
-      },
-      {
         "key": "Work Web",
         "value": ""
       },
@@ -3253,10 +3333,6 @@
       },
       {
         "key": "League Website",
-        "value": "N/A"
-      },
-      {
-        "key": "EMail",
         "value": "N/A"
       },
       {
@@ -3406,10 +3482,6 @@
         "value": ""
       },
       {
-        "key": "EMail",
-        "value": "N/A"
-      },
-      {
         "key": "Work Web",
         "value": "N/A"
       },
@@ -3507,7 +3579,7 @@
       },
       {
         "key": "Hometown",
-        "value": "N/A"
+        "value": "Nashville, TN"
       },
       {
         "key": "Location",
@@ -3523,11 +3595,7 @@
       },
       {
         "key": "League Website",
-        "value": "N/A"
-      },
-      {
-        "key": "EMail",
-        "value": "N/A"
+        "value": "fastnfunracing.com"
       },
       {
         "key": "Work Web",
@@ -3710,10 +3778,6 @@
         "value": ""
       },
       {
-        "key": "EMail",
-        "value": ""
-      },
-      {
         "key": "Work Web",
         "value": ""
       },
@@ -3822,10 +3886,6 @@
         "value": ""
       },
       {
-        "key": "EMail",
-        "value": ""
-      },
-      {
         "key": "Work Web",
         "value": ""
       },
@@ -3922,10 +3982,6 @@
       {
         "key": "Name",
         "value": "Joshua Caudill"
-      },
-      {
-        "key": "EMail",
-        "value": "jkcaudill@gmail.com"
       }
     ]
   },
@@ -4034,7 +4090,7 @@
     ]
   },
   "430372": {
-    "name": "Bryan Liranzo2",
+    "name": "Bryan Liranzo",
     "id": 430372,
     "leagues": [
       {
@@ -4118,10 +4174,6 @@
       {
         "key": "AIM",
         "value": ""
-      },
-      {
-        "key": "EMail",
-        "value": "N/A"
       },
       {
         "key": "Work Web",
