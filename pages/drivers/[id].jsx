@@ -176,7 +176,7 @@ function DriverDetailsPage({ driver, valid }) {
                     />
                     <Grid container justify="center" spacing={2}>
                         <Grid item xs={12} md={10} >
-                            <DefinitionList definitions={driver.info} />
+                            <DefinitionList definitions={driver.info.filter(o => o.value && o.value !== "N/A")} />
                         </Grid>
                     </Grid>
                 </Section>
