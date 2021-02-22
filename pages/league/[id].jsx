@@ -30,7 +30,7 @@ function LeaguePage({ league, overview, valid }) {
         return moment(a.sessions[0].date) > moment(b.sessions[0].date) ? -1 : 1
     });
     return (
-        <PageFrame>
+        <PageFrame title={league.name}>
             <CompleteHeroBackground
                 backgroundImg={overview.img}
                 title={league.name}
