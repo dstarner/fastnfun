@@ -193,7 +193,7 @@
       }
     ],
     "member_since": "2020-05-08",
-    "bio": "Just your average Team Penske enthusiast!\n\nThe Ever-Growing Accolades:\n1/2021; Season 2 Champion Power Equipment Fast n Fun Cup Series Champion and 9x race winner\n1/2021; GTD Pole Sitting Driver/Team iRacing Daytona 24 hours",
+    "bio": "-Just your average Team Penske enthusiast! \n\n-Co-Founder CLJ Motorsports\n\n-The Ever-Growing Accolades:\n1/2021; Season 2 Champion Power Equipment Fast n Fun Cup Series Champion and 9x race winner\n1/2021; GTD Pole Sitting Driver/Team iRacing Daytona 24 hours\n2/2021; Season 1 Fast n Fun IROC Series Champion and 4x race winner\n2/2021; Season 2 Fast n Fun Truck Series runner up and 4x race winner",
     "info": [
       {
         "key": "Birthdate",
@@ -253,7 +253,7 @@
       },
       {
         "key": "iRacing Cars",
-        "value": "Huracan GT3, LMP2, C8R, Ford NASCAR Vehicles, Dallara IR18"
+        "value": "Huracan GT3, P217, C8R, Ford NASCAR Vehicles, Dallara IR18"
       },
       {
         "key": "Hobbies",
@@ -445,11 +445,95 @@
       }
     ],
     "member_since": "2020-04-10",
-    "bio": "No biographical information found",
+    "bio": "I'm a Rona racer that joined in April of 2020. I'm married and have a kid. I got into Iracing because it's cheaper and less time consuming than buying a street stock car. I suck at dirt too, so I'm glad I went the Iracing route.",
     "info": [
+      {
+        "key": "Birthdate",
+        "value": "N/A"
+      },
+      {
+        "key": "Nickname",
+        "value": "Brad"
+      },
+      {
+        "key": "Hometown",
+        "value": "N/A"
+      },
+      {
+        "key": "Location",
+        "value": "The top of the Bell Curve"
+      },
       {
         "key": "Name",
         "value": "John Thacker"
+      },
+      {
+        "key": "My Website",
+        "value": "N/A"
+      },
+      {
+        "key": "League Website",
+        "value": "N/A"
+      },
+      {
+        "key": "Work Web",
+        "value": "N/A"
+      },
+      {
+        "key": "Website",
+        "value": "N/A"
+      },
+      {
+        "key": "Real Tracks",
+        "value": "N/A"
+      },
+      {
+        "key": "Real Cars",
+        "value": "N/A"
+      },
+      {
+        "key": "Movies",
+        "value": "N/A"
+      },
+      {
+        "key": "iRacing Tracks",
+        "value": "N/A"
+      },
+      {
+        "key": "iRacing Cars",
+        "value": "N/A"
+      },
+      {
+        "key": "Hobbies",
+        "value": "N/A"
+      },
+      {
+        "key": "Games",
+        "value": "N/A"
+      },
+      {
+        "key": "Music",
+        "value": "N/A"
+      },
+      {
+        "key": "TV Shows",
+        "value": "N/A"
+      },
+      {
+        "key": "Books",
+        "value": "N/A"
+      },
+      {
+        "key": "Quotations",
+        "value": "N/A"
+      },
+      {
+        "key": "Sports",
+        "value": "N/A"
+      },
+      {
+        "key": "iRacing Series",
+        "value": "N/A"
       }
     ]
   },
@@ -1371,19 +1455,23 @@
       },
       {
         "key": "My Website",
-        "value": "N/A"
+        "value": ""
       },
       {
         "key": "League Website",
-        "value": "N/A"
+        "value": ""
+      },
+      {
+        "key": "AIM",
+        "value": ""
       },
       {
         "key": "Work Web",
-        "value": "N/A"
+        "value": ""
       },
       {
         "key": "Website",
-        "value": "N/A"
+        "value": ""
       },
       {
         "key": "Real Tracks",
@@ -1395,35 +1483,35 @@
       },
       {
         "key": "Movies",
-        "value": "N/A"
+        "value": ""
       },
       {
         "key": "iRacing Tracks",
-        "value": "N/A"
+        "value": ""
       },
       {
         "key": "iRacing Cars",
-        "value": "N/A"
+        "value": "NASCAR Trucks"
       },
       {
         "key": "Hobbies",
-        "value": "N/A"
+        "value": ""
       },
       {
         "key": "Games",
-        "value": "N/A"
+        "value": ""
       },
       {
         "key": "Music",
-        "value": "N/A"
+        "value": "George Jones to Jay-Z"
       },
       {
         "key": "TV Shows",
-        "value": "N/A"
+        "value": ""
       },
       {
         "key": "Books",
-        "value": "N/A"
+        "value": "Historical Military"
       },
       {
         "key": "Quotations",
@@ -1431,11 +1519,11 @@
       },
       {
         "key": "Sports",
-        "value": "N/A"
+        "value": ""
       },
       {
         "key": "iRacing Series",
-        "value": "N/A"
+        "value": ""
       }
     ]
   },
@@ -1521,7 +1609,7 @@
       },
       {
         "key": "Name",
-        "value": "George Young2"
+        "value": "George E Young"
       },
       {
         "key": "My Website",
