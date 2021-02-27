@@ -139,7 +139,7 @@ function DriverDetailsPage({ driver, valid }) {
                         <CardContent>
                             <ListItem className={classes.listItem}>
                                 <ListItemAvatar className={classes.listItemAvatar}>
-                                    <Avatar src={driver.src} className={classes.avatar} />
+                                    <Avatar src={`/static/images/profiles/${driver.id}.png`} className={classes.avatar} />
                                 </ListItemAvatar>
                                 <ListItemText
                                     className={classes.listItemText}

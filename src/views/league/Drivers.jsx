@@ -73,7 +73,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-const defaultAvatar = (driver) => {return { src: driver.src }};
+const defaultAvatar = (driver) => {return { src: `/static/images/profiles/${driver.id}.png` }};
 const defaultSecondary = (driver) => driver.number ? `#${driver.number}` : "-";
 
 function Drivers({ drivers, avatarFunc=defaultAvatar, secondaryFunc=defaultSecondary }) {

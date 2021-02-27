@@ -15,12 +15,14 @@ LEAGUE_DIR_PATH = SCRIPT_PATH / Path('../src/data/leagues')
 LEAGUE_INDEX_FILE = LEAGUE_DIR_PATH / Path('index.json')
 LEAGUE_OUTPUT_FILE = LEAGUE_DIR_PATH / Path('scrapped.json')
 DRIVER_OUTPUT_FILE = LEAGUE_DIR_PATH / Path('../drivers.json')
+PROFILE_IMAGE_FILE = SCRIPT_PATH / Path('../public/static/images/profiles/{id}.png')
 
 # iRacing URLs
 LOGIN_URL = 'https://members.iracing.com/membersite/login.jsp'
 LEAGUE_URL = 'https://members.iracing.com/membersite/member/LeagueView.do?league={id}'
 LEAGUE_IMAGE_URL = 'https://members.iracing.com/membersite/member/GetLeagueImage?leagueid={id}'
 DRIVER_URL = 'https://members.iracing.com/membersite/member/CareerStats.do?custid={id}'
+PROFILE_URL = 'https://members.iracing.com/membersite/member/GetProfileImage?custid={id}'
 
 # Credentials
 USERNAME = os.getenv('IRACING_USERNAME', 'test')
@@ -250,6 +252,13 @@ class iRacingLeagueScrapper:
 
         return data
 
+    def get_driver_image(self, member_id):
+        self.driver.get(PROFILE_URL.format(id=member_id))
+        sleep(1)
+        with open(str(PROFILE_IMAGE_FILE).format(id=member_id), 'wb') as f: 
+            f.write(self.driver.find_element_by_tag_name('img').screenshot_as_png)
+
+
 def load_league_ids():
     """Load the league IDs to lookup
     """
@@ -314,6 +323,7 @@ def driver_load(scrapper):
             iracing_data = scrapper.get_driver_info(member_id)
             for key, val in iracing_data.items():
                 member_data[member_id][key] = val
+            scrapper.get_driver_image(member_id)
         except Exception as e:
             print(f'MEMBER ERROR: {e}')
     
